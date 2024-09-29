@@ -12,12 +12,64 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Año"
           },
           {
+            "name": "Education level",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Formal",
+                "Informal",
+                ""
+              ]
+            },
+            "title": "Education level"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "24 and under",
+                "25 to 34",
+                "35 to 44",
+                "45 to 54",
+                "55 to 64",
+                ""
+              ]
+            },
+            "title": "Age"
+          },
+          {
+            "name": "Income",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "1st quintile (lowest)",
+                "3rd quintile",
+                "5th quintile (highest)",
+                ""
+              ]
+            },
+            "title": "Income"
+          },
+          {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]

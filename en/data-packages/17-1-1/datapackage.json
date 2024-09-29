@@ -12,8 +12,35 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Current receipts",
+                "Current tax receipts",
+                "Contributions for government social insurance",
+                "Income receipts on assets",
+                "Current transfer receipts",
+                "Current surplus of government enterprises",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Share",
+                ""
+              ]
+            },
+            "title": "Units"
           },
           {
             "name": "Value",

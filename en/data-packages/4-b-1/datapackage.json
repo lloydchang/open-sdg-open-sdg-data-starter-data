@@ -12,12 +12,42 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
           },
           {
+            "name": "Scholarship Sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Basic life skills for adults",
+                "Media and free flow of information",
+                "Multisector education/training",
+                "Advanced technical and managerial training",
+                "Employment creation",
+                "Primary education",
+                "Health personnel development",
+                "Environmental education/training",
+                "Higher education",
+                ""
+              ]
+            },
+            "title": "Scholarship Sector"
+          },
+          {
+            "name": "Measure",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Gross Disbursements, USD Current",
+                ""
+              ]
+            },
+            "title": "Measure"
+          },
+          {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]

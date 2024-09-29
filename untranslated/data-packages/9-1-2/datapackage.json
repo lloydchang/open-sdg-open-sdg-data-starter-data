@@ -12,7 +12,45 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number"
+            "type": "integer"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "passenger-kilometers",
+                "freight-tonnage",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Passenger mode",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Highway",
+                "Air",
+                "Transit",
+                "Rail",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Freight mode",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Truck",
+                "Pipeline",
+                "Rail",
+                "Vessel",
+                "Air",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
